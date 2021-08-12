@@ -452,6 +452,7 @@ body .portada, body .cifras-container .cifras-item, body .whatsapp-seccion {
     flex-direction: column;
     padding: 2rem 0rem;
     height: 10rem;
+    box-shadow: 0rem 2rem black;
   }
   body footer .footer-img {
     margin-bottom: 1rem;
