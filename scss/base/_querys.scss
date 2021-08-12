@@ -21,8 +21,171 @@
 
     body {
 
-        
+        .portada-titulo {
+            font-size: 2rem;
+            margin: 1rem 0;
+            padding: 0 0.5rem;
+            
+        }
 
+        .portada-texto {
+            font-size: 0.7rem;
+            padding: 0 0.5rem;
+            font-weight: 500;
+        }
+
+        .destacado-somos {
+        .destacado-somos-text {
+            font-size: 1.2rem;
+            padding: 1rem 0.5rem;
+        }
+
+        
+    }
+
+    .seccion-baja {
+        background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.1), 
+          rgba(0, 0, 0, 0.1)
+        ), url('../images/background-mobile.png');
+        background-position: center;
+        background-repeat: repeat;
+        background-size: 100%;
+        height: 100%;
+        .sect-servicios {
+            padding: 0rem 0rem;
+            margin: 2rem 0rem;
+
+            .pantallas {
+                margin-bottom: 1.5rem;
+            }
+
+            .sonido {
+                margin-bottom: 1.5rem;
+            }
+
+            .luces {
+                margin-bottom: 1.5rem;
+            }
+
+
+        }
+
+        .video-seccion {
+            flex-direction: column;
+            padding: 0rem 0rem;
+
+            .video {
+                height: 10rem;
+                width: 14rem;
+            }
+            .video-texto {
+                margin-top: 1rem;
+                padding: 0 0.5rem;
+                font-size: 0.7rem;
+            }
+
+
+        }
+    }
+
+    .video-seccion2 {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 2rem 0.5rem;
+
+        .video {
+            height: 10rem;
+            width: 14rem;
+        }
+    
+        .video-texto2 {
+            margin-top: 1rem;
+            padding: 0 0.5rem;
+            font-size: 0.7rem;
+            margin-right: 0rem;
+
+            .destacado {
+                font-weight: 500;
+            }
+
+    
+}
+}
+
+    //CIFRAS
+
+    .cifras-container {
+        flex-direction: column;
+        background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.1), 
+            rgba(0, 0, 0, 0.1)
+          ), url('../images/seccion-cifras-nexos-mobile.png');
+        background-repeat: no-repeat; 
+        background-size: cover;
+        justify-content: space-evenly;
+        padding: 1.5rem 0.5rem;
 
 }
+
+//WHATSAPP
+
+.whatsapp-seccion {
+    flex-direction: column;
+    padding: 2rem 0rem;
+    text-align: center;
+    justify-content: center;
+
+
+    .whatsapp-texto {
+        width: 100%;
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 0rem 0.5rem;
+        padding-right: 0rem;
+        line-height: 1;
+        margin-right: 0rem;
+    }
+
+    .whatsapp-1 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0rem 0.5rem;
+    }
+    
+    
+    .whatsapp-tel {
+        width: 90%;
+        padding: 0rem 0rem;
+    }
+
+    .whatsapp-no {
+        font-size: 1.2rem;
+        padding: 0rem 0.5rem;
+    }
+    
+}
+
+//FOOTER 
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0rem;
+    height: 10rem;
+
+    .footer-img {
+        margin-bottom: 1rem;
+    }
+
+}
+
+}
+
 }

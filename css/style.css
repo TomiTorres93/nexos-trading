@@ -171,15 +171,28 @@ body .video-seccion .video-texto {
   text-shadow: black 5px 10px 20px;
   margin-left: 1rem;
 }
-body .video-seccion .video-texto2 {
+body .video-seccion .destacado {
+  font-weight: 500;
+}
+body .video-seccion2 {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: center;
+  padding: 0rem 0rem;
+}
+body .video-seccion2 .video {
+  border: 1px solid #D82529;
+}
+body .video-seccion2 .destacado {
+  font-weight: 500;
+}
+body .video-seccion2 .video-texto2 {
   color: white;
   font-size: 1rem;
   font-weight: 200;
   text-shadow: black 5px 10px 20px;
   margin-right: 1rem;
-}
-body .video-seccion .destacado {
-  font-weight: 500;
 }
 body .cifras-container {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/seccion-cifras-nexos.png");
@@ -262,6 +275,10 @@ body .whatsapp-seccion .whatsapp-tel-text {
   text-decoration: none;
   color: black;
   padding-top: 1rem;
+  transition: all 0.3s;
+}
+body .whatsapp-seccion .whatsapp-tel-text:hover {
+  transform: scale(1.03);
 }
 body .whatsapp-seccion .whatsapp-no {
   color: white;
@@ -323,6 +340,121 @@ body .portada, body .cifras-container .cifras-item, body .whatsapp-seccion {
 
   .none-mobile {
     display: none !important;
+  }
+
+  body .portada-titulo {
+    font-size: 2rem;
+    margin: 1rem 0;
+    padding: 0 0.5rem;
+  }
+  body .portada-texto {
+    font-size: 0.7rem;
+    padding: 0 0.5rem;
+    font-weight: 500;
+  }
+  body .destacado-somos .destacado-somos-text {
+    font-size: 1.2rem;
+    padding: 1rem 0.5rem;
+  }
+  body .seccion-baja {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/background-mobile.png");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 100%;
+    height: 100%;
+  }
+  body .seccion-baja .sect-servicios {
+    padding: 0rem 0rem;
+    margin: 2rem 0rem;
+  }
+  body .seccion-baja .sect-servicios .pantallas {
+    margin-bottom: 1.5rem;
+  }
+  body .seccion-baja .sect-servicios .sonido {
+    margin-bottom: 1.5rem;
+  }
+  body .seccion-baja .sect-servicios .luces {
+    margin-bottom: 1.5rem;
+  }
+  body .seccion-baja .video-seccion {
+    flex-direction: column;
+    padding: 0rem 0rem;
+  }
+  body .seccion-baja .video-seccion .video {
+    height: 10rem;
+    width: 14rem;
+  }
+  body .seccion-baja .video-seccion .video-texto {
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+    font-size: 0.7rem;
+  }
+  body .video-seccion2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 2rem 0.5rem;
+  }
+  body .video-seccion2 .video {
+    height: 10rem;
+    width: 14rem;
+  }
+  body .video-seccion2 .video-texto2 {
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+    font-size: 0.7rem;
+    margin-right: 0rem;
+  }
+  body .video-seccion2 .video-texto2 .destacado {
+    font-weight: 500;
+  }
+  body .cifras-container {
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/seccion-cifras-nexos-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-evenly;
+    padding: 1.5rem 0.5rem;
+  }
+  body .whatsapp-seccion {
+    flex-direction: column;
+    padding: 2rem 0rem;
+    text-align: center;
+    justify-content: center;
+  }
+  body .whatsapp-seccion .whatsapp-texto {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0rem 0.5rem;
+    padding-right: 0rem;
+    line-height: 1;
+    margin-right: 0rem;
+  }
+  body .whatsapp-seccion .whatsapp-1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0rem 0.5rem;
+  }
+  body .whatsapp-seccion .whatsapp-tel {
+    width: 90%;
+    padding: 0rem 0rem;
+  }
+  body .whatsapp-seccion .whatsapp-no {
+    font-size: 1.2rem;
+    padding: 0rem 0.5rem;
+  }
+  body footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0rem;
+    height: 10rem;
+  }
+  body footer .footer-img {
+    margin-bottom: 1rem;
   }
 }
 

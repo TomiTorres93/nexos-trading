@@ -212,12 +212,14 @@ body {
             }
         }
 
+ 
+
         .video-seccion {
             @extend %flexbox-row;
             justify-content: center;
             margin-top: 3rem;
             margin-bottom: 3rem;
-            padding: 0rem 5.5rem;
+            padding: 0rem 5.5rem;  
 
             .video {
                 border: 1px solid nth($color, 1);
@@ -231,7 +233,25 @@ body {
                 margin-left: 1rem;
             }
 
-            
+            .destacado {
+                font-weight: 500;
+            }
+        }
+
+        .video-seccion2 {
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            justify-content: center;
+            padding: 0rem 0rem;
+        
+            .video {
+                border: 1px solid nth($color, 1);
+            }
+        
+            .destacado {
+                font-weight: 500;
+            }
             .video-texto2 {
                 color: white;
                 font-size: 1rem;
@@ -239,10 +259,6 @@ body {
                 text-shadow: black 5px 10px 20px ;
                 margin-right: 1rem;
 
-            }
-
-            .destacado {
-                font-weight: 500;
             }
         }
 
@@ -311,7 +327,7 @@ body {
             padding: 2rem 5.5rem;
             position: relative;
             bottom: 1rem;
-
+            
             .whatsapp-texto {
                 width: 70%;
                 font-size: 1.4rem;
@@ -353,6 +369,11 @@ body {
                 text-decoration: none;
                 color: black;
                 padding-top: 1rem;
+                transition: all 0.3s;
+
+                &:hover {
+                    transform: scale(1.03);
+                }
             }
 
             .whatsapp-no {
@@ -363,22 +384,28 @@ body {
                 margin-top: 1rem;
             }
         }
+                //FOOTER 
 
-        //FOOTER 
-
-        footer {
-            @extend %flexbox-row;
-            justify-content: space-evenly;
-            height: 8rem;
-            background-color: black;
-            position: relative;
-            bottom: 1rem;
-        }
-
-        .footer-img {
-            height: 3rem;        }
+                footer {
+                    @extend %flexbox-row;
+                    justify-content: space-evenly;
+                    height: 8rem;
+                    background-color: black;
+                    position: relative;
+                    bottom: 1rem;
+                }
         
+                .footer-img {
+                    height: 3rem;        
+                }
     }
+
+
+        
+
+
+
+    
 
 
 
