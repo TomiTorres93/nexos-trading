@@ -1,0 +1,28 @@
+/*MOBILE QUERY*/
+@media only screen and (min-width: 601px) {
+
+    .none-desktop {
+        display: none !important;
+    }
+ }
+
+
+ @media only screen and (min-width: 100px) and  (max-width: 600px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden !important;
+    }
+
+
+    .none-mobile {
+        display: none !important;
+    }
+
+    body {
+
+        
+
+
+}
+}

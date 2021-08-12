@@ -1,0 +1,389 @@
+
+@import '../funciones/list';
+@import '../funciones/extends';
+@import '../funciones/mixins';
+
+@import '../base/variables';
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+html {
+    font-size: 25px ;
+    font-family: 'Darker Grotesque', sans-serif;
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+body {
+    
+.header {
+    background-color: black;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+
+
+    .logo {
+        height: 3.5rem;
+        margin: auto;
+        }
+}
+    .portada {
+        @extend %flexbox-columna;
+
+        background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.5), 
+          rgba(0, 0, 0, 0.5)
+        ), url('../images/nexos-portada.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 30rem;
+        justify-content: center;
+
+    }
+
+    .portada-titulo {
+        color: white;
+        font-size: 3rem;
+        font-weight: 700;
+        padding: 0 8rem;
+        text-align: center;
+        text-shadow: black 5px 10px 20px ;
+    }
+
+    .portada-texto {
+        color: white;
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 0 8rem;
+        text-align: center;
+        text-shadow: black 5px 10px 20px ;
+
+    }
+
+    .destacado-somos {
+        background-color: nth($color, 1) ;
+        margin-top: 0;
+
+        .destacado-somos-text {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 600;
+            padding: 1rem 5.5rem;
+            text-align: center;
+    
+            }
+        }
+
+        .seccion-baja {
+            background:
+            linear-gradient(
+              rgba(0, 0, 0, 0.5), 
+              rgba(0, 0, 0, 0.5)
+            ), url('../images/LucesNexos.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 80rem;
+            position: relative;
+            bottom: 1rem;
+
+
+            .sect-servicios {
+                @extend %flexbox-row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                padding: 5rem 5.5rem 0 5.5rem;
+                
+
+
+
+                .serv-text {
+                    color: white;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    text-align: center;
+                    line-height: 1;         
+                }
+
+                
+                .serv-text-led {
+                    color: white;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    text-align: center;
+                    line-height: 1;         
+                    margin-top: 1rem;
+                }
+
+                .pantallas {
+                    background:
+                    linear-gradient(
+                      rgba(0, 0, 0, 0.1), 
+                      rgba(0, 0, 0, 0.1)
+                    ), url('../images/pantallas-led.png');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 97%;
+                    background-color: white;
+                    height: 10rem;
+                    width: 10rem;
+                    border-radius: 200px;
+                    display: flex;
+                    justify-content: center;
+                    border: 5px solid #D82529;
+                    align-items: center;
+            
+
+                }
+
+  
+                
+                .sonido {
+                    background:
+                    linear-gradient(
+                        rgba(0, 0, 0, 0.1), 
+                        rgba(0, 0, 0, 0.1)
+                      ), url('../images/sonido.png');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 97%;
+                    background-color: white;
+                    height: 10rem;
+                    width: 10rem;
+                    border-radius: 200px;
+                    display: flex;
+                    justify-content: center;
+                    border: 5px solid #D82529;                    
+                    align-items: center;
+
+                }
+
+                
+                .luces {
+                    background:
+                    linear-gradient(
+                        rgba(0, 0, 0, 0.1), 
+                        rgba(0, 0, 0, 0.1)
+                      ), url('../images/luces.png');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 97%;
+                    background-color: white;
+                    height: 10rem;
+                    width: 10rem;
+                    border-radius: 200px;
+                    display: flex;
+                    justify-content: center;
+                    border: 5px solid #D82529;                    
+                      align-items: center;
+
+                }
+
+                
+                .sillas {
+                    background:
+                    linear-gradient(
+                        rgba(0, 0, 0, 0.1), 
+                        rgba(0, 0, 0, 0.1)
+                      ), url('../images/sillas.png');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 97%;
+                    background-color: white;
+                    height: 10rem;
+                    width: 10rem;
+                    border-radius: 200px;
+                    display: flex;
+                    justify-content: center;
+                    border: 5px solid #D82529;                    
+                    align-items: center;
+
+                }
+            }
+        }
+
+        .video-seccion {
+            @extend %flexbox-row;
+            justify-content: center;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            padding: 0rem 5.5rem;
+
+            .video {
+                border: 1px solid nth($color, 1);
+            }
+
+            .video-texto {
+                color: white;
+                font-size: 1rem;
+                font-weight: 200;
+                text-shadow: black 5px 10px 20px ;
+                margin-left: 1rem;
+            }
+
+            
+            .video-texto2 {
+                color: white;
+                font-size: 1rem;
+                font-weight: 200;
+                text-shadow: black 5px 10px 20px ;
+                margin-right: 1rem;
+
+            }
+
+            .destacado {
+                font-weight: 500;
+            }
+        }
+
+        //CIFRAS CONTAINER
+
+        .cifras-container {
+            @extend %flexbox-row;
+            background:
+            linear-gradient(
+                rgba(0, 0, 0, 0.1), 
+                rgba(0, 0, 0, 0.1)
+              ), url('../images/seccion-cifras-nexos.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            justify-content: space-evenly;
+            padding: 2rem 5.5rem;
+
+            .cifras-item {
+                @extend %flexbox-columna;
+                width: 20rem;
+                height: 17rem;
+                color: white;
+                text-align: center;
+                margin: 0 1.8rem;
+            }
+
+            .cifras-nro-cont {
+                background-color: rgba(0, 0, 0, 0);
+                border-radius: 2000px;
+                border: 2px solid white;
+                width: 10rem;
+                height: 10rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            .cifras-nro {
+                font-family: 'Raleway', sans-serif;
+                color: white;
+                font-size: 2.6rem;
+                font-weight: 700;
+                line-height: 1;   
+            }
+            .cifras-texto {
+                color: white;
+                font-size: 1rem;
+                width: 10rem;
+                font-weight: 200;
+                line-height: 1.2; 
+                font-weight: 500;
+                margin-top: 1rem;
+
+            
+            }
+
+        }
+
+        //WHATSAPP
+
+        .whatsapp-seccion {
+            @extend %flexbox-columna;
+            justify-content: space-evenly;
+            background-color: nth($color, 1);
+            padding: 2rem 5.5rem;
+            position: relative;
+            bottom: 1rem;
+
+            .whatsapp-texto {
+                width: 70%;
+                font-size: 1.4rem;
+                font-weight: 500;
+                padding-right: 3rem;
+                line-height: 1;
+                margin-right: 2rem;
+            }
+
+            .destacado2 {
+                font-weight: 700;
+            }
+            .enlace {
+                text-decoration: none;
+            }
+            
+            .whatsapp-1 {
+                @extend %flexbox-row;
+                flex-wrap: wrap;
+                width: 100%;
+
+            }
+
+            .whatsapp-tel {
+                @extend %flexbox-row;
+                justify-content: space-evenly;
+                border: 3px solid black;
+                width: 25%;
+                height: 3rem;
+
+                align-items: center;
+            }
+            
+            .whatsapp-tel-text {
+                font-family: 'Raleway', sans-serif;
+                font-size: 1.5rem;
+                font-weight: 700;
+                letter-spacing: 1px;
+                text-decoration: none;
+                color: black;
+                padding-top: 1rem;
+            }
+
+            .whatsapp-no {
+                color: white;
+                font-size: 1.2rem;
+                font-weight: 700;
+                letter-spacing: 1.5px;
+                margin-top: 1rem;
+            }
+        }
+
+        //FOOTER 
+
+        footer {
+            @extend %flexbox-row;
+            justify-content: space-evenly;
+            height: 8rem;
+            background-color: black;
+            position: relative;
+            bottom: 1rem;
+        }
+
+        .footer-img {
+            height: 3rem;        }
+        
+    }
+
+
+
+
+
+
+
+
